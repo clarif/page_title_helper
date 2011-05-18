@@ -1,0 +1,29 @@
+PageTitleHelper
+===============
+
+PageTitleHelper is a very very simple helper which provides two helper methods for setting page titles. It supports localized titles.
+
+Example
+=======
+
+All codes need to be placed in views.
+
+In the view layout (e.g. application.html.erb for instance):
+<head>
+	...
+	<%= site_title "MySite" %>
+	...
+</head>
+
+In a view:
+
+<div id="content">
+	...
+	<%= title "Welcome !" %>
+	...
+</div>
+
+
+
+
+Copyright (c) 2011 Fabrice Clari, released under the MIT license
