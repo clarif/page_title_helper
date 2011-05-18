@@ -6,24 +6,24 @@ PageTitleHelper is a very very simple helper which provides two helper methods f
 Example
 =======
 
-All codes need to be placed in views.
-
-In the view layout (e.g. application.html.erb for instance):
+In the view layout (e.g. <code>application.html.erb</code> for instance):
+<code>
 <head>
 	...
 	<%= site_title "MySite" %>
 	...
 </head>
+</code>
 
-In a view:
+In a view, the title helper takes a parameter which can be either a <code>String</code> or a <code>Symbol</code>. In case of a <code>Symbol</code>, its value is sent first to I18n.t to be translated. In all cases, the page title is added to the <code><title/></code> tag after the site name. 
 
+<code>
 <div id="content">
 	...
 	<%= title "Welcome !" %>
 	...
 </div>
-
-
+</code>
 
 
 Copyright (c) 2011 Fabrice Clari, released under the MIT license
