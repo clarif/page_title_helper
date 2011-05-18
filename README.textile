@@ -7,11 +7,11 @@ h2. Example
 In the view layout (e.g. @application.html.erb@ for instance):
 
 <pre>
-	<head>
-		...
-		<%= site_title "MySite" %>
-		...
-	</head>
+<head>
+	...
+	<%= site_title "MySite" %>
+	...
+</head>
 </pre>
 
 
@@ -19,12 +19,17 @@ In a view, the title helper takes a parameter which can be either a String or a 
 
 
 <pre>
-	<div id="content">
-		...
-		<%= title "Welcome !" %>
-		...
-	</div>
+<div id="content">
+	...
+	<%= title "Welcome !" %>
+	...
+</div>
 </pre>
 
+h3. Installation
+
+<pre>
+rails install git://github.com/clarif/page_title_helper.git
+</pre>
 
 Copyright (c) 2011 Fabrice Clari, released under the MIT license
